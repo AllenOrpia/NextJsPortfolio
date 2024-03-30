@@ -47,7 +47,7 @@ export default function Intro() {
           </motion.span>
         </div>
       </div>
-      <motion.p
+      <motion.h1
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         className="mb-10 mt-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
@@ -56,7 +56,7 @@ export default function Intro() {
         <span className="font-bold">full-stack developer</span> with a focus on
         the <span className="font-bold">MERN</span> stack. I enjoy building
         responsive websites & applications.
-      </motion.p>
+      </motion.h1>
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
@@ -77,19 +77,21 @@ export default function Intro() {
           href="/CV.pdf"
           download={true}
         >
-          Download Resume{" "}
+          My Resume{" "}
           <HiDownload className="group-hover:translate-y-1 opacity-70 transition" />
         </a>
-        <a 
-        href="https://www.linkedin.com/in/allen-orpia-386b2213b/"
-        target="_blank"
-        className="bg-white p-4 flex text-gray-700 items-center gap-2 rounded-full focus:scale-125 hover:scale-125 hover:text-gray-950 active:scale-90 transition cursor-pointer border border-black/10">
+        <a
+          href="https://www.linkedin.com/in/allen-orpia-386b2213b/"
+          target="_blank"
+          className="bg-white p-4 flex text-gray-700 items-center gap-2 rounded-full focus:scale-125 hover:scale-125 hover:text-gray-950 active:scale-90 transition cursor-pointer border border-black/10"
+        >
           <BsLinkedin />
         </a>
         <a
-        href="https://github.com/AllenOrpia"
-        target="_blank" 
-        className="bg-white p-4 flex text-gray-700 items-center gap-2 rounded-full text-[1.35rem] focus:scale-125 hover:scale-125 hover:text-gray-950 active:scale-90 transition cursor-pointer border border-black/10">
+          href="https://github.com/AllenOrpia"
+          target="_blank"
+          className="bg-white p-4 flex text-gray-700 items-center gap-2 rounded-full text-[1.35rem] focus:scale-125 hover:scale-125 hover:text-gray-950 active:scale-90 transition cursor-pointer border border-black/10"
+        >
           <FaGithubSquare />
         </a>
       </motion.div>
