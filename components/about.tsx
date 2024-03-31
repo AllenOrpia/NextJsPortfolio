@@ -1,17 +1,21 @@
-
-'use client'
+"use client";
 
 import React from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
+import useSectionInView from "@/lib/hooks";
 
 export default function About() {
+  const { ref } = useSectionInView("About", 0.9);
   return (
-    <motion.section 
-        initial={{ opacity: 0, y:100}}
-        animate={{ opacity: 1, y:0}}
-        transition={{ delay: 0.175}}
-        className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40">
+    <motion.section
+      ref={ref}
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.175 }}
+      className=" max-w-[45rem] text-center leading-8  scroll-mt-28 "
+      id="about"
+    >
       <SectionHeading>About Me</SectionHeading>
       <p className="mb-3 text-lg ">
         After earning my bachelor's degree in biological sciences, I took the
@@ -23,7 +27,7 @@ export default function About() {
         challenges and discovering solutions. Currently, my core stack is
         MongoDB, Node.js, React, and NextJS. I am also familiar with Python and
         MySQL. I love to keep myself occupied and am continously learning new
-        technologies to further develop my skills. 
+        technologies to further develop my skills.
       </p>
       <p className="text-lg">
         Outside of coding, you can usually find me playing video games,
