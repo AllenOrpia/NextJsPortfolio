@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import Image from "next/image";
 import React from "react";
@@ -12,7 +12,7 @@ import useSectionInView from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Intro() {
-  const { ref } = useSectionInView("Home", 0.5)
+  const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
   return (
     <section
@@ -77,9 +77,8 @@ export default function Intro() {
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-90 transition cursor-pointer "
           href="#contact"
           onClick={() => {
-            setActiveSection('Contact');
+            setActiveSection("Contact");
             setTimeOfLastClick(Date.now());
-
           }}
         >
           Contact Me{" "}
@@ -93,20 +92,22 @@ export default function Intro() {
           My Resume{" "}
           <HiDownload className="group-hover:translate-y-1 opacity-70 transition" />
         </a>
-        <a
-          href="https://www.linkedin.com/in/allen-orpia-386b2213b/"
-          target="_blank"
-          className="bg-white p-4 flex text-gray-700 items-center gap-2 rounded-full focus:scale-125 hover:scale-125 hover:text-gray-950 active:scale-90 transition cursor-pointer borderBlack"
-        >
-          <BsLinkedin />
-        </a>
-        <a
-          href="https://github.com/AllenOrpia"
-          target="_blank"
-          className="bg-white p-4 flex text-gray-700 items-center gap-2 rounded-full text-[1.35rem] focus:scale-125 hover:scale-125 hover:text-gray-950 active:scale-90 transition cursor-pointer borderBlack"
-        >
-          <FaGithubSquare />
-        </a>
+        <div className="flex gap-2 items-center">
+          <a
+            href="https://www.linkedin.com/in/allen-orpia-386b2213b/"
+            target="_blank"
+            className="bg-white p-4 flex text-gray-700 items-center gap-2 rounded-full focus:scale-125 hover:scale-125 hover:text-gray-950 active:scale-90 transition cursor-pointer borderBlack"
+          >
+            <BsLinkedin />
+          </a>
+          <a
+            href="https://github.com/AllenOrpia"
+            target="_blank"
+            className="bg-white p-4 flex text-gray-700 items-center gap-2 rounded-full text-[1.35rem] focus:scale-125 hover:scale-125 hover:text-gray-950 active:scale-90 transition cursor-pointer borderBlack"
+          >
+            <FaGithubSquare />
+          </a>
+        </div>
       </motion.div>
     </section>
   );
