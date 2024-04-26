@@ -37,7 +37,7 @@ export default function Intro() {
               height={192}
               quality={95}
               priority={true}
-              className=" h-28 w-28 rounded-full border-[0.35rem] border-white object-cover shadow-xl"
+              className=" animate-bounce h-28 w-28 rounded-full border-[0.35rem] border-white object-cover shadow-xl"
             />
           </motion.div>
           <motion.span
@@ -82,7 +82,7 @@ export default function Intro() {
           }}
         >
           Contact Me{" "}
-          <BsArrowRight className="opacity-70 group-hover:translate-x-2 transition" />
+          <BsArrowRight className="opacity-70  transition group-hover:rotate-90" />
         </Link>
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-90 transition cursor-pointer borderBlack"
