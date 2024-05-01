@@ -7,6 +7,7 @@ import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 import estatePirates from '@/public/EstatePirates.png';
 import calGems from '@/public/Calgems1.png';
+import nouveauDepart from '@/public/nouveau-depart.png';
 
 export const links = [
   {
@@ -39,26 +40,26 @@ export const links = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Nouveau Depart",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: estatePirates,
-    projectLink: ''
+      "Blog website where users can share experiences, insights, and stories. Built with NextJs app router. Integrated with a text editor and contain pagination features.",
+    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma", "NextAuth"],
+    imageUrl: nouveauDepart,
+    projectLink: 'https://nouveau-depart-pearl.vercel.app/'
   },
   {
-    title: "rmtDev",
+    title: "Estate Pirates",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "Real Estate website for property listings. It has features like filtering and sorting.",
+    tags: ["React", "JavaScript", "MongoDB", "Tailwind", "Prisma", "Framer"],
     imageUrl: estatePirates,
-    projectLink: ''
+    projectLink: 'https://estatepirates.vercel.app/'
   },
   {
-    title: "Word Analytics",
+    title: "CalGems",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      "Yelp-like clone for hiking/camping trails. Features a map for ui enhancement and comments for user interaction.",
+    tags: ["Express", "Ejs", "Javascript", "NodeJs"],
     imageUrl: calGems,
     projectLink: 'https://serene-anchorage-99994-207a1d3f8d8d.herokuapp.com/'
   },
