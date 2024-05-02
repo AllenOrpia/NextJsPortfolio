@@ -8,7 +8,7 @@ type Theme = 'light' | 'dark';
 
 export default function ThemeToggle() {
     const [theme, setTheme] = useState<Theme>('light');
-    console.log(theme)
+    
 
     const toggleTheme = () => {
         if (theme === 'light') {
