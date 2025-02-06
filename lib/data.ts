@@ -6,7 +6,7 @@ import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 import estatePirates from '@/public/EstatePirates.png';
-import calGems from '@/public/Calgems1.png';
+import breads from '@/public/breads.png'
 import nouveauDepart from '@/public/nouveau-depart.png';
 
 export const links = [
@@ -40,6 +40,14 @@ export const links = [
 
 export const projectsData = [
   {
+    title: "Breads",
+    description:
+      "Full-stack Threads clone built with Next.js and TypeScript allowing users to create threads, reply to discussions, and form communities with Clerk-powered authentication.",
+    tags: ["Next.js", "TailwindCSS", "Typescript", "MongoDB", "Shadcn"],
+    imageUrl: breads,
+    projectLink: 'https://breads-olive.vercel.app/'
+  },
+  {
     title: "Nouveau Depart",
     description:
       "Blog website where users can share experiences, insights, and stories. Built with NextJs app router. Integrated with a text editor and contain pagination features.",
@@ -50,18 +58,10 @@ export const projectsData = [
   {
     title: "Estate Pirates",
     description:
-      "Real Estate website for property listings. It has features like filtering and sorting.",
-    tags: ["React", "JavaScript", "MongoDB", "Tailwind", "Prisma", "Framer"],
+      "Full-stack real estate platform built with the MERN stack and Prisma ORM, allowing users to browse, list, and manage properties with seamless authentication.",
+    tags: ["React", "JavaScript", "MongoDB", "Prisma", "Framer"],
     imageUrl: estatePirates,
     projectLink: 'https://estatepirates.vercel.app/'
-  },
-  {
-    title: "CalGems",
-    description:
-      "Yelp-like clone for hiking/camping trails. Features a map for ui enhancement and comments for user interaction.",
-    tags: ["Express", "Ejs", "Javascript", "NodeJs"],
-    imageUrl: calGems,
-    projectLink: 'https://serene-anchorage-99994-207a1d3f8d8d.herokuapp.com/'
   },
 ] as const;
 
